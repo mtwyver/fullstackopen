@@ -1,0 +1,9 @@
+sequenceDiagram
+    participant browser
+    participant server
+
+    Note right of browser: Enter a new note into the form element and click the save button
+    browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+
+
+    Note right of browser: The browser executes the callback function that renders the notes
